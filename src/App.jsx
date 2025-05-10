@@ -3,6 +3,14 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
+// component
+const StyleBtn = () => {
+  return (
+    <button style={{ padding: "10px 20px", background: "pink" }}>Ấn đi</button>
+  );
+};
+
+// app
 function App() {
   const [count, setCount] = useState(0);
 
@@ -16,7 +24,8 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Xin chào</h1>
+      <h1>Xin chào các bạn</h1>
+      <StyleBtn />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
